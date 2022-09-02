@@ -1,0 +1,7 @@
+@import './variables';
+
+html, body, h1, h2, button{
+    font-family: $source;
+    margin: 0;
+    padding: 0;
+}

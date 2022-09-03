@@ -1,5 +1,7 @@
+//Importando arquivo SCSS
 @import './variables';
 
+//Tirando as configurações padrão do css e declarando a fonte em todo html
 html, body, h1, h2, button{
     font-family: $source;
     margin: 0;

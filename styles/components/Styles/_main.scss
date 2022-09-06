@@ -1,0 +1,21 @@
+/*
+     Importando o arquivo variables e 
+     estilizando a base da página para deixar ela centralizada
+
+    @autor: Vitor Reis
+*/
+@import '../../abstract/variables';
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: $cor-primaria;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}

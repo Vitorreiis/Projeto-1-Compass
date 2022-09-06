@@ -1,0 +1,47 @@
+/*
+    Aplicando responsividade para telas de tablet com no mínimo 768px de largura e no máximo de 1200px de largura
+
+    @autor: Vitor Reis
+*/
+
+    @media only screen and (min-width: 768px) and (max-width: 1200px){
+        #main-container{
+            .image-container{
+                img{
+                    max-width: 400px;
+                }
+            }
+            .text-container{
+                h1{
+                    font-size: 50px;
+                }
+                h2{
+                    font-size: 30px;
+                }
+            }
+            .box-circle-container{
+                .radios{
+                    input{
+                        width: 15px;
+                        height: 15px;
+                        &::before{
+                            height: 15px;
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+            .button-container{
+                a{
+                    max-width: 400px;
+                    height: 65px;
+                    font-size: 22px;
+                  }
+            }
+            .skip-container{
+                a{
+                   font-size: 22px;
+                }
+            }
+        }
+    }

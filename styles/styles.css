@@ -1,9 +1,21 @@
+@charset "UTF-8";
+/*
+    Fazendo os imports dos arquivos SCSS
+
+    @autor: Vitor Reis
+*/
 html, body, h1, h2, button {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/*
+     Importando o arquivo variables e 
+     estilizando a base da página para deixar ela centralizada
+
+    @autor: Vitor Reis
+*/
 #main-container {
   display: flex;
   flex-direction: column;
@@ -17,33 +29,56 @@ html, body, h1, h2, button {
   left: 0;
   margin: auto;
 }
-#main-container .image-container img {
-  width: 100%;
-  max-width: 300px;
+
+/*
+    Importando o arquivo variables.scss e estilizando os links
+
+    @autor: Vitor Reis
+*/
+.button-container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
 }
-#main-container .text-container {
-  display: block;
+.button-container a {
+  text-decoration: none;
+  display: flex;
+  width: 80%;
+  max-width: 308px;
+  height: 58px;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #92E3A9;
+  color: white;
+  font-weight: bold;
 }
-#main-container .text-container h1 {
-  margin-top: 10px;
-  font-size: 30px;
+
+.skip-container {
+  margin-top: 25px;
 }
-#main-container .text-container h2 {
-  margin-top: 10px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+.skip-container a {
+  text-decoration: none;
+  color: #92E3A9;
+  font-weight: bold;
 }
-#main-container .box-circle-container {
+
+/*
+     Importando o arquivo variables e 
+     Estilizando os radios
+
+    @autor: Vitor Reis
+*/
+.box-circle-container {
   margin-top: 35px;
   font-size: 20px;
   display: flex;
   justify-content: center;
 }
-#main-container .box-circle-container .radios {
+.box-circle-container .radios {
   display: inline;
 }
-#main-container .box-circle-container .radios input {
+.box-circle-container .radios input {
   position: relative;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -57,7 +92,7 @@ html, body, h1, h2, button {
   align-items: center;
   flex-direction: row;
 }
-#main-container .box-circle-container .radios input::before {
+.box-circle-container .radios input::before {
   content: "";
   position: absolute;
   height: 12px;
@@ -67,45 +102,25 @@ html, body, h1, h2, button {
   opacity: 0;
   border: none;
 }
-#main-container .box-circle-container .radios input:checked::before {
+.box-circle-container .radios input:checked::before {
   opacity: 1;
 }
-#main-container .button-container {
-  margin-top: 35px;
-  display: flex;
-  justify-content: center;
-}
-#main-container .button-container a {
-  text-decoration: none;
-  display: flex;
-  width: 80%;
-  max-width: 308px;
-  height: 58px;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  background-color: #92E3A9;
-  color: white;
-  font-weight: bold;
-}
-#main-container .skip-container {
-  margin-top: 25px;
-}
-#main-container .skip-container a {
-  text-decoration: none;
-  color: #92E3A9;
-  font-weight: bold;
-}
+
+/*
+    Aplicando responsividade para telas de mobile com no máximo de 480px de largura
+
+    @autor: Vitor Reis
+*/
 @media screen and (max-width: 480px) {
   #main-container .text-container h1 {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 30px;
   }
   #main-container .text-container h2 {
     margin-top: 10px;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
     padding: 0 10px;
   }
   #main-container .button-container a {
@@ -114,4 +129,59 @@ html, body, h1, h2, button {
   #main-container .skip-container a {
     font-size: 18px;
   }
+}
+/*
+    Aplicando responsividade para telas de tablet com no mínimo 768px de largura e no máximo de 1200px de largura
+
+    @autor: Vitor Reis
+*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  #main-container .image-container img {
+    max-width: 400px;
+  }
+  #main-container .text-container h1 {
+    font-size: 50px;
+  }
+  #main-container .text-container h2 {
+    font-size: 30px;
+  }
+  #main-container .box-circle-container .radios input {
+    width: 15px;
+    height: 15px;
+  }
+  #main-container .box-circle-container .radios input::before {
+    height: 15px;
+    width: 15px;
+  }
+  #main-container .button-container a {
+    max-width: 400px;
+    height: 65px;
+    font-size: 22px;
+  }
+  #main-container .skip-container a {
+    font-size: 22px;
+  }
+}
+/*
+    Estilizando a imagem e os textos(h1; h2)
+
+    @autor: Vitor Reis
+*/
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.text-container {
+  display: block;
+}
+.text-container h1 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+.text-container h2 {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
 }/*# sourceMappingURL=styles.css.map */

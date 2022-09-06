@@ -1,0 +1,42 @@
+/*
+     Importando o arquivo variables e 
+     Estilizando os radios
+
+    @autor: Vitor Reis
+*/
+@import '../../abstract/variables';
+
+.box-circle-container{
+    margin-top: 35px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    .radios{
+        display: inline;
+        input{
+            position: relative;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 25px;
+            border: solid 1px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            &::before{
+                content: '';
+                position: absolute;
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+                background-color: $cor-secundaria;
+                opacity: 0;
+                border: none;
+            }
+            &:checked::before{
+                opacity: 1;
+            }
+        }
+    }
+    }

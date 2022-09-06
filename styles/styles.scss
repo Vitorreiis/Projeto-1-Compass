@@ -1,2 +1,12 @@
+/*
+    Fazendo os imports dos arquivos SCSS
+
+    @autor: Vitor Reis
+*/
 @import './abstract/base';
-@import './components/main';
+@import './components/Styles/main';
+@import './components/Styles/links';
+@import './components/Styles/radios';
+@import './components/Responsividade/mobile';
+@import './components/Responsividade/tablet';
+@import './components/Styles/img-text';

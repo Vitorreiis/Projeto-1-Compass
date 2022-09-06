@@ -1,0 +1,32 @@
+/*
+    Aplicando responsividade para telas de mobile com no máximo de 480px de largura
+
+    @autor: Vitor Reis
+*/
+@media  screen and (max-width: 480px) {
+    #main-container{
+    .text-container{
+        h1{
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        h2{
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px; 
+            padding: 0 10px;
+        }
+    }
+    .button-container{
+        a{
+            font-size: 18px;
+        }
+    }
+    .skip-container{
+        a{
+            font-size: 18px;
+        }
+    }
+}
+}

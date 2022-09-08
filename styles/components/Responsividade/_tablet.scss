@@ -4,18 +4,19 @@
     @autor: Vitor Reis
 */
 
-    @media only screen and (min-width: 768px) and (max-width: 1200px){
+    @media only screen and (min-width: 768px) and (max-width: 980px){
         #main-container{
             .image-container{
+                margin-top: 200px;
                 img{
-                    max-width: 400px;
-                }
+                    max-width: 400px;                }
             }
             .text-container{
                 h1{
                     font-size: 50px;
                 }
                 h2{
+                    padding: 0 50px;
                     font-size: 30px;
                 }
             }
@@ -34,11 +35,12 @@
             .button-container{
                 a{
                     max-width: 400px;
-                    height: 65px;
+                    height: 70px;
                     font-size: 22px;
                   }
             }
             .skip-container{
+                margin-bottom: 100px;
                 a{
                    font-size: 22px;
                 }

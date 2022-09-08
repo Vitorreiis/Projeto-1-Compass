@@ -117,9 +117,6 @@ html, body, h1, h2, button {
     font-size: 30px;
   }
   #main-container .text-container h2 {
-    margin-top: 10px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 24px;
     padding: 0 10px;
   }
@@ -131,11 +128,48 @@ html, body, h1, h2, button {
   }
 }
 /*
+    Aplicando responsividade para telas de mobile com no máximo de 282px de largura
+
+    @autor: Vitor Reis
+*/
+@media screen and (max-width: 282px) {
+  #main-container .image-container img {
+    max-width: 220px;
+  }
+  #main-container .text-container h1 {
+    font-size: 20px;
+  }
+  #main-container .text-container h2 {
+    font-size: 15px;
+  }
+  #main-container .box-circle-container .radios input {
+    width: 10px;
+    height: 10px;
+  }
+  #main-container .box-circle-container .radios input::before {
+    height: 10px;
+    width: 10px;
+  }
+  #main-container .button-container a {
+    font-size: 15px;
+    height: 50px;
+  }
+  #main-container .skip-container {
+    margin-top: 15px;
+  }
+  #main-container .skip-container a {
+    font-size: 14px;
+  }
+}
+/*
     Aplicando responsividade para telas de tablet com no mínimo 768px de largura e no máximo de 1200px de largura
 
     @autor: Vitor Reis
 */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  #main-container .image-container {
+    margin-top: 200px;
+  }
   #main-container .image-container img {
     max-width: 400px;
   }
@@ -143,6 +177,7 @@ html, body, h1, h2, button {
     font-size: 50px;
   }
   #main-container .text-container h2 {
+    padding: 0 50px;
     font-size: 30px;
   }
   #main-container .box-circle-container .radios input {
@@ -155,8 +190,11 @@ html, body, h1, h2, button {
   }
   #main-container .button-container a {
     max-width: 400px;
-    height: 65px;
+    height: 70px;
     font-size: 22px;
+  }
+  #main-container .skip-container {
+    margin-bottom: 100px;
   }
   #main-container .skip-container a {
     font-size: 22px;
